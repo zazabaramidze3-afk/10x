@@ -1,0 +1,438 @@
+.header{
+    text-align: center;
+    margin-bottom: 20px;
+    
+
+
+
+
+}
+
+
+.leftside,.rightside{
+    height: 100vh;
+    width: 100%;
+    
+    
+    
+
+}
+.leftside{
+    background:rgb(255, 255, 255);
+    border-right: #000000 1px solid;
+     
+    
+    
+    
+}
+.leftside:hover{
+    background:rgb(255, 255, 255);
+    border-right: #000000 1px solid;
+    box-shadow: 0 0 10px rgba(66, 156, 240, 0.5);
+    
+    
+    
+    
+}
+
+.rightside{
+    background:rgb(255, 255, 255);
+    padding:50px; 
+    box-shadow: 0 0 10px rgba(66, 156, 240, 0.5);
+    border-top-right-radius: 20px;
+
+    
+
+}
+
+a:hover{
+    color: #0b0d94;
+    text-decoration: none;
+}
+
+.anonimous{
+
+     width:150px;
+     height:150px;
+     padding:3px;
+     opacity: 33%;
+}
+
+.anonimous:hover{
+
+     width:150px;
+     height:150px;
+     padding:3px;
+     opacity: 100%;
+    
+     }
+
+
+.content{
+max-width: 1140px;
+margin: 0 auto;
+padding: 40px 20px;
+flex: 1 1 auto;
+}
+
+h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: bold;
+    border-bottom: 1px solid rgb(138, 138, 138);
+    width: 300px;
+    padding-top: 20px;
+
+
+}
+.slash{
+  position: relative;
+  top: 0;
+  left: 0;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  
+  
+} 
+
+
+body {
+    background-color: #ffffff; /* Темный фон, как на изображении */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+}
+
+.skills-container {
+    display: flex;
+    gap: 20px; /* Расстояние между индикаторами */
+    justify-content: right;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.skill-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* Используем conic-gradient для создания прогресса: 
+       Оттенок #36D1DC - #5B86E5 градиент используется для заполненной части, 
+       #444444 для пустой части. 
+       calc(var(--progress) * 1%) вычисляет процент в градусах. */
+    background: conic-gradient(
+        #36D1DC 0% calc(var(--progress) * 1%),
+        #ced3d3 calc(var(--progress) * 1%) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.skill-circle::before {
+    content: '';
+    position: absolute;
+    width: 85%; /* Создает внутренний круг */
+    height: 85%;
+    background-color: #ffffff; /* Цвет фона внутреннего круга */
+    border-radius: 50%;
+}
+
+.skill-text {
+    position: relative; /* Размещает текст над внутренним кругом */
+    z-index: 1;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.skill-circle:hover {
+    box-shadow: 0 0 15px rgba(85, 228, 238, 0.7);
+    transform: scale(1.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* Используем conic-gradient для создания прогресса: 
+       Оттенок #36D1DC - #5B86E5 градиент используется для заполненной части, 
+       #444444 для пустой части. 
+       calc(var(--progress) * 1%) вычисляет процент в градусах. */
+    background: conic-gradient(
+        #65babe 0% calc(var(--progress) * 1%),
+        #10047a calc(var(--progress) * 1%) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    color: #000000;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+.footer:hover{
+    border-bottom: 1px solid #29b9d3;
+    
+}
+
+
+
+
+/* .avatar{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #000000 0% calc(var(--progress) * 1%),
+    #000000 calc(var(--progress) * 1%) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-image: image("image.jpg");
+
+} */
+
+.avatar {
+  vertical-align: middle;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: solid #ffffff 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.avatar:hover {
+  vertical-align: middle;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: solid #ffffff 1px;
+  box-shadow: 0 0 10px rgba(27, 118, 221, 0.5);
+}
+
+
+.info-section{
+    /* border: solid #ffffff 1px; */
+    padding: 20px;
+}
+
+ul{
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(192, 190, 190);
+    width: 300px;
+    padding: 3px;
+}
+
+
+.containercircles{
+    margin:0 auto;
+    
+
+}
+
+.line{
+    border-bottom: 1px solid rgb(192, 190, 190);
+    width: 400px;
+    padding:3px;
+    
+}
+
+
+.gradient-text {
+background-image: linear-gradient(rgba(115, 238, 238, 0.623), blue);
+    color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 48px;
+    text-align: center;
+
+
+}
+
+
+.separator {
+    height: 100px; /* Adjust height as needed */
+    width: 5px; /* Thickness of the vertical line */
+    background-color: #000; /* Black color for the line */
+
+}
+
+.gradient-text {
+    /* Gradient for CRISTIAN */
+    background: linear-gradient(to right, #9370DB, #b2d6e4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    align-items: center;
+}
+
+
+.gradient-text2 {
+
+    /* Gradient for DEVELOPER */
+    background: linear-gradient(to right, #000000, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    float: center;
+    font-size: 48px;
+    font-weight: bold;
+    padding-left: 150px;
+    
+}
+
+.gradient-text3 {
+
+    /* Gradient for DEVELOPER */
+    background: linear-gradient(to right, #656bca, #6ba303);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    float: center;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: left;
+    
+}
+
+
+
+.progress-bar-windows {
+    border: 1px solid #f8f8f8;
+    border-radius: 10px;
+    width: 33px;
+    height: 10px;
+    background-color: #0ab993;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(76, 255, 199, 0.3);
+    transition: width 0.5s ease-in-out; /* Плавная анимация изменения ширины */
+}
+.progress-bar-windows:hover {
+    box-shadow: 0 0 15px rgba(8, 97, 69, 0.5);
+    background-color: #5727c9;
+     width: 200px;
+}
+
+
+.progress-bar-linux {
+    border: 1px solid #f8f8f8;
+    border-radius: 10px;
+    width: 20px;
+    height: 10px;
+    background-color: #0ab993;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(76, 255, 199, 0.3);
+    transition: width 0.5s ease-in-out; /* Плавная анимация изменения ширины */
+}
+
+.progress-bar-linux:hover {
+    box-shadow: 0 0 15px rgba(62, 3, 223, 0.5);
+    background-color: #05493a;
+    width: 120px;
+}
+
+.progress-bar-cli {
+    border: 1px solid #f8f8f8;
+    border-radius: 10px;
+    width: 20px;
+    height: 10px;
+    background-color: #0ab993;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(76, 255, 199, 0.3);
+    transition: width 0.5s ease-in-out; /* Плавная анимация изменения ширины */
+}
+
+.progress-bar-cli:hover {
+    box-shadow: 0 0 15px rgba(32, 65, 54, 0.5);
+    background-color: #06a194;
+    width: 150px;
+}
+
+.dot{
+
+    height: 15px;
+    width: 15px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 100;
+
+
+}
+
+.dot:hover{
+
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 100;
+
+
+}
+
+
+.linebar{
+    width: 1px;
+    height: 45px; /* Устанавливаем высоту 0 */
+    border: none;
+    background-color: #000000;
+    /* Создаем тень снизу, которая выглядит как мягкая линия */
+    box-shadow: 0 1px 1px rgba(194, 191, 191, 0.2); 
+    margin: 0 auto;
+
+}
+
+.text{
+    padding:20px;
+}
+
+.element{
+    padding:33px;
+}
+
+
+.stylish-button {
+    background: linear-gradient(45deg, #210242, #2575fc);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(7, 0, 20, 0.4);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.stylish-button:hover {
+    background: linear-gradient(45deg, #295794, #051b41);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(83, 4, 231, 0.4);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
